@@ -1,0 +1,87 @@
+/* burger start */
+
+.nav {
+  font-family: "Barriecito", system-ui;
+  font-size: 30px;
+  color: #04389e;
+}
+
+.burger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.burger-btn img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+/* burger slut */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 20px;
+  background-color: #f4efeb;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+.header {
+  box-shadow: 0 0 15px rgba(145, 98, 48, 0.9);
+} */
+
+.Logo {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #04389e;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #9d6d52;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+}

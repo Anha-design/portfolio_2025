@@ -1,7 +1,67 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: #f4efeb;
+}
+.menu {
+  font-family: "Barriecito", system-ui;
+  font-size: 30px;
+  color: #04389e;
+  
+}
+
+/* --fonts- */
+
+h1 {
+  font-family: "Barriecito", system-ui;
+  font-size: 50px;
+  color: #04389e;
+}
+
+.n1 {
+  font-family: "Barriecito", system-ui;
+  font-size: 20px;
+  color: #04389e;
+}
+
+.n2 {
+  font-family: "Barriecito", system-ui;
+  font-size: 40px;
+  color: #04389e;
+}
+.n3 {
+  font-family: "Barriecito", system-ui;
+  font-size: 60px;
+  color: #04389e;
+}
+.n4 {
+  font-family: "Barriecito", system-ui;
+  font-size: 60px;
+  color: #04389e;
+}
+.n5 {
+  font-family: "Barriecito", system-ui;
+  font-size: 80px;
+  color: #04389e;
+}
+
 .barriecito-regular {
   font-family: "Barriecito", system-ui;
   font-weight: 400;
   font-style: normal;
+
+  color: #04389e;
 }
 
 .roboto-flex {
@@ -13,3 +73,71 @@
     "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
 }
 
+.frontimage {
+  padding: 1em;
+  border-radius: 40px;
+}
+
+/* grids */
+.h1main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 2rem;
+  padding-bottom: 0;
+  align-items: left;
+}
+
+.h1main_2 {
+  grid-column: 1 / -1; /* fylder fra første til sidste kolonne */
+  padding-left: 32px;
+  display: grid;
+}
+
+.container {
+  display: flex; /* gør børnene til en række */
+  gap: 20px; /* afstand mellem elementerne */
+  align-items: center; /* lodret centrering af elementerne */
+  justify-content: left; /* starter fra venstre */
+  padding: 2rem;
+}
+
+.grid_2_1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+/* Desktop */
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobil */
+@media (max-width: 400px) {
+  .header {
+    padding: 1.5rem;
+  }
+
+  .content {
+    padding: 2rem 1.5rem;
+  }
+
+  .text .chapter {
+    font-size: 3rem;
+  }
+
+  .images {
+    grid-template-columns: 1fr;
+  }
+
+  .img {
+    aspect-ratio: 16 / 9;
+  }
+}

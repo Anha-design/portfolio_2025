@@ -33,18 +33,16 @@ header {
   justify-content: space-between;
   align-items: left;
   padding: 20px;
+
   background-color: #f4efeb;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 
-.header {
-  box-shadow: 0 0 15px rgba(145, 98, 48, 0.9);
-} */
-
-.Logo {
-  width: 50px;
+.logo {
+  width: 100px;
   height: 50px;
+  display: flex;
+  align-items: center;
 }
 
 nav {

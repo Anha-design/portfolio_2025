@@ -3,37 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barriecito&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="layout.css" />
-      <link rel="stylesheet" href="menu.css" />
 
-
-    <meta name="robots" content="noindex" />
     <title>Little Sir portfolio</title>
+    <meta name="robots" content="noindex" />
     <link rel="icon" type="image/svg+xml" href="svg/dot_favicon.svg" />
-  </head>
-  <body>
-        <!-- ====== HEADER START ====== -->
-    <header class="site-header">
-      <!-- Navigation -->
 
-      <!-- Navigation slut -->
-    <!-- section 1 -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="style-test.css" />
+  </head>
+
+  <body>
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="svg/little_sir_logo_small.svg" alt="Little Sir Logo" />
+        </a>
+      </div>
+
+      <nav id="nav">
+        <ul class="menu">
+          <li><a href="#1">1</a></li>
+          <li><a href="#2">2</a></li>
+          <li><a href="#3">3</a></li>
+          <li><a href="#4">4</a></li>
+          <li><a href="#5">5</a></li>
+          <li><a href="om_mig.html">Om mig</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger-btn" aria-label="Åbn menu">
+        <img src="svg/burgermenu.svg" alt="Burger menu ikon" />
+      </button>
+    </header>
+
+    <!-- ===== SECTION 1 ===== -->
     <section class="grid_2_1">
-      <div class="h1main">
+      <div class="container">
         <h1>Multimedia Design,</h1>
       </div>
+
       <div class="h1main_2">
         <h1>Curated</h1>
       </div>
@@ -48,11 +67,15 @@
         </div>
       </div>
 
-      <img class="frontimage" src="image/profilepic_backside_700x500.webp" alt="backside of a wowman with dark hair" />
+      <img
+        class="frontimage"
+        src="image/profilepic_backside_700x500.webp"
+        alt="backside of a woman with dark hair"
+      />
     </section>
 
-    <!-- Java Script -->
-        <script src="menu.js"></script>
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
   </body>
-
 </html>

@@ -39,6 +39,12 @@ h1 {
   font-size: 50px;
   color: #04389e;
 }
+
+.pop-title {
+  font-family: "Barriecito", system-ui;
+  font-size: 50px;
+  color: #04389e;
+}
 h2 {
   font-family: "Barriecito", system-ui;
   font-size: 40px;
@@ -124,6 +130,17 @@ a {
   padding-top: 2rem;
 }
 
+.website-link a {
+  font-family: "Barriecito", system-ui;
+  font-size: 20px;
+  color: #04389e;
+  text-decoration: none; /* fjern understregning */
+}
+
+.website-link a:hover {
+  color: #9d6d52;
+}
+
 /* -------------- Burgermenu ----------- */
 .burger-menu {
   position: absolute;
@@ -188,13 +205,6 @@ a {
   padding-top: 1rem;
   padding-bottom: 0;
   padding-left: 1rem;
-}
-
-.imagesection {
-  display: grid;
-  grid-template-columns: 1fr; /* Mobil: én kolonne */
-  gap: 1rem; /* afstand mellem billeder */
-  padding: 1rem;
 }
 
 .imagesection img {
@@ -264,28 +274,6 @@ a {
   }
 }
 
-/* Animation på h1
-.pop-title span {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(30px) scale(0.95);
-  animation: popUp 0.8s ease-out forwards;
-}
-
-.pop-title span:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.pop-title span:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-@keyframes popUp {
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-} */
 /* Desktop */
 @media (max-width: 1024px) {
   .content {
@@ -319,4 +307,62 @@ a {
   height: auto;
   object-fit: cover; /* proportionelt og fylder cellen */
   display: block;
+}
+
+/* ----------Animation------ */
+
+.pop-title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  animation: popUp 0.6s ease-out forwards;
+}
+
+/* Forsink hvert bogstav */
+.pop-title span:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.pop-title span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.pop-title span:nth-child(3) {
+  animation-delay: 0.15s;
+}
+/* ... fortsæt for alle span’er ... */
+.pop-title span:nth-child(17) {
+  animation-delay: 0.1s;
+}
+/* Tilføj flere som nødvendigt */
+
+/* -------------Animation på dot------- */
+
+/* Keyframes */
+@keyframes popUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.dot-icon {
+  width: 40px; /* størrelse på knappen */
+  height: 40px;
+  display: block;
+  animation: pulse 4.2s infinite ease-in-out;
+  transform-origin: center; /* sørger for, at pulsen sker fra midten */
+}
+
+/* Pulserende keyframes */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2); /* vokser 20% */
+    opacity: 0.8; /* lidt gennemsigtig */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

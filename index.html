@@ -41,9 +41,20 @@
         </ul>
       </nav>
 
-      <button class="burger-btn" aria-label="Åbn menu">
-        <img src="svg/burgermenu.svg" alt="Burger menu ikon" />
+      <button class="burger-btn" aria-label="Åbn menu" aria-expanded="false">
+        <img src="svg/burgermenu.svg" alt="" />
       </button>
+
+      <nav class="burger-menu" id="burgerMenu">
+        <ul>
+          <li><a href="om_mig.html">Om mig</a></li>
+          <li><a href="1.html">1. Studiestartsprøve</a></li>
+          <li><a href="2.html">2. All things moive</a></li>
+          <li><a href="3.html">3. Teenager på nødration</a></li>
+          <li><a href="4.html">4. CHIBA redesign</a></li>
+          <li><a href="5.html">5. Et juleeventyr</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- ===== SECTION 1 ===== -->
@@ -65,13 +76,24 @@
 
       <img
         class="frontimage"
-        src="image/profilepic_backside_700x500.webp"
+        src="image/profilepic_backside_400x400webp.webp"
         alt="backside of a woman with dark hair"
       />
     </section>
 
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="footersize">
+        <img src="svg/streg_footer.svg" alt="streg" />
+      </div>
+      <div class="namesvg">
+        <img src="svg/annebeth_faurby_2025.svg" alt="Annebeth Faurby 2025" />
+      </div>
+    </footer>
+
     <!-- ===== JAVASCRIPT ===== -->
     <script src="menu.js"></script>
     <script src="script.js"></script>
+    <script src="burgermenu.js"></script>
   </body>
 </html>

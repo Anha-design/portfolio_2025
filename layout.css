@@ -20,6 +20,12 @@ body {
   color: #04389e;
 }
 
+.herocontainer .menu {
+  font-family: "Barriecito", system-ui;
+  font-size: 30px;
+  color: #04389e;
+}
+
 /* --fonts- */
 
 h1 {
@@ -28,35 +34,42 @@ h1 {
   color: #04389e;
 }
 
-.n1 {
+.n1 a {
   font-family: "Barriecito", system-ui;
   font-size: 20px;
   color: #04389e;
 }
 
-.n2 {
+.n2 a {
   font-family: "Barriecito", system-ui;
   font-size: 40px;
   color: #04389e;
 }
-.n3 {
+.n3 a {
   font-family: "Barriecito", system-ui;
   font-size: 60px;
   color: #04389e;
 }
-.n4 {
+.n4 a {
   font-family: "Barriecito", system-ui;
   font-size: 60px;
   color: #04389e;
 }
-.n5 {
+.n5 a {
   font-family: "Barriecito", system-ui;
   font-size: 80px;
   color: #04389e;
 }
 
-.herocontainer:hover {
+.n1 a:hover,
+.n2 a:hover,
+.n3 a:hover,
+.n4 a:hover,
+.n5 a:hover {
   color: #9d6d52;
+}
+a {
+  text-decoration: none;
 }
 
 .barriecito-regular {
@@ -83,6 +96,56 @@ h1 {
   grid-template-columns: 1fr auto;
 }
 
+.footersize {
+  max-width: 1500px; /* vælg den størrelse der passer */
+  margin: 0 auto; /* centrer */
+  align-items: center;
+  padding-top: 10px;
+}
+
+.namesvg {
+  max-width: 200px; /* vælg den størrelse der passer */
+  margin: 0 auto; /* centrer */
+  padding-bottom: 10px;
+}
+
+/* -------------- Burgermenu ----------- */
+.burger-menu {
+  position: absolute;
+  top: 80px;
+  right: 1rem;
+  background: #f4efeb;
+  padding: 1rem;
+  border-radius: 12px;
+  /* Tilføjet korrekt box-shadow */
+  box-shadow: 0px 4px 10px #9d6d52;
+  display: none;
+}
+
+.burger-menu.open {
+  display: block;
+}
+
+.burger-menu ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.burger-menu li {
+  margin-bottom: 0.5rem;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  font-family: "Barriecito", system-ui;
+  color: #04389e;
+}
+
+.burger-menu a:hover {
+  color: #9d6d52;
+}
+
 /*--------------- grids --------------*/
 
 .h1_section {
@@ -92,6 +155,8 @@ h1 {
   gap: 3rem 4rem;
   align-items: center;
   padding: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
 }
 
 /* Venstre kolonne */
@@ -113,7 +178,7 @@ h1 {
 .frontimage {
   grid-column: 2;
   grid-row: 1 / span 2;
-  width: 100%;
+  width: 90%;
   height: auto;
   object-fit: cover;
 }

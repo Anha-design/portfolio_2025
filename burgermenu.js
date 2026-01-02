@@ -7,5 +7,3 @@ burgerBtn.addEventListener("click", () => {
   const expanded = burgerBtn.getAttribute("aria-expanded") === "true";
   burgerBtn.setAttribute("aria-expanded", !expanded);
 });
-
-

@@ -20,39 +20,67 @@ body {
   color: #04389e;
 }
 
+.herocontainer .menu {
+  font-family: "Barriecito", system-ui;
+  font-size: 30px;
+  color: #04389e;
+}
+
 /* --fonts- */
+p {
+  font-family: "Roboto+Flex", system-ui;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+}
 
 h1 {
   font-family: "Barriecito", system-ui;
   font-size: 50px;
   color: #04389e;
 }
+h2 {
+  font-family: "Barriecito", system-ui;
+  font-size: 40px;
+  color: #04389e;
+}
 
-.n1 {
+.n1 a {
   font-family: "Barriecito", system-ui;
   font-size: 20px;
   color: #04389e;
 }
 
-.n2 {
+.n2 a {
   font-family: "Barriecito", system-ui;
   font-size: 40px;
   color: #04389e;
 }
-.n3 {
+.n3 a {
   font-family: "Barriecito", system-ui;
   font-size: 60px;
   color: #04389e;
 }
-.n4 {
+.n4 a {
   font-family: "Barriecito", system-ui;
   font-size: 60px;
   color: #04389e;
 }
-.n5 {
+.n5 a {
   font-family: "Barriecito", system-ui;
   font-size: 80px;
   color: #04389e;
+}
+
+.n1 a:hover,
+.n2 a:hover,
+.n3 a:hover,
+.n4 a:hover,
+.n5 a:hover {
+  color: #9d6d52;
+}
+a {
+  text-decoration: none;
 }
 
 .barriecito-regular {
@@ -79,35 +107,184 @@ h1 {
   grid-template-columns: 1fr auto;
 }
 
-/* grids */
-.h1main {
+.footersize {
+  max-width: 1500px; /* vælg den størrelse der passer */
+  margin: 0 auto; /* centrer */
+  align-items: center;
+  padding-top: 10px;
+}
+
+.namesvg {
+  max-width: 200px; /* vælg den størrelse der passer */
+  margin: 0 auto; /* centrer */
+  padding-bottom: 10px;
+}
+
+.pop-title {
+  padding-top: 2rem;
+}
+
+/* -------------- Burgermenu ----------- */
+.burger-menu {
+  position: absolute;
+  top: 80px;
+  right: 1rem;
+  background: #f4efeb;
+  padding: 1rem;
+  border-radius: 12px;
+  /* Tilføjet korrekt box-shadow */
+  box-shadow: 0px 4px 10px #9d6d52;
+  display: none;
+}
+
+.burger-menu.open {
+  display: block;
+}
+
+.burger-menu ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.burger-menu li {
+  margin-bottom: 0.5rem;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  font-family: "Barriecito", system-ui;
+  color: #04389e;
+}
+
+.burger-menu a:hover {
+  color: #9d6d52;
+}
+/*--------------- dot homeknap---------- */
+
+.dot {
+  display: flex; /* gør containeren til flex */
+  justify-content: flex-end; /* skubber indholdet til højre */
+  padding: 1rem; /* evt. luft rundt om */
+  margin-right: 15px;
+  width: 100%; /* fylder hele bredden */
+}
+
+.dot img {
+  max-width: 30px;
+  max-height: 40px;
+  display: block;
+}
+
+/*--------------- grids --------------*/
+
+.section1 {
   display: grid;
-  grid-template-columns: 1fr auto;
-  padding: 2rem;
+  grid-template-columns: 1fr 1.2fr;
+  grid-template-rows: auto auto;
+  gap: 3rem 4rem;
+  align-items: top;
+  padding: 4rem;
+  padding-top: 1rem;
   padding-bottom: 0;
-  align-items: left;
 }
 
-.h1main_2 {
-  grid-column: 1 / -1; /* fylder fra første til sidste kolonne */
-  padding-left: 32px;
+.imagesection {
   display: grid;
+  grid-template-columns: 1fr; /* Mobil: én kolonne */
+  gap: 1rem; /* afstand mellem billeder */
+  padding: 1rem;
 }
 
-.container {
-  display: flex; /* gør børnene til en række */
-  gap: 20px; /* afstand mellem elementerne */
-  align-items: center; /* lodret centrering af elementerne */
-  justify-content: left; /* starter fra venstre */
-  padding: 2rem;
+.imagesection img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.grid_2_1 {
+.h1_section {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1.2fr;
+  grid-template-rows: auto auto;
+  gap: 3rem 4rem;
+  align-items: center;
+  padding: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
 }
 
+/* Venstre kolonne */
+.h1container {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.herocontainer {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  gap: 4rem;
+  align-items: baseline;
+  padding-bottom: 50px;
+}
+
+/* Højre kolonne */
+.frontimage {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Mobil */
+@media (max-width: 600px) {
+  .h1_section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 2rem;
+  }
+
+  .h1container {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .container {
+    grid-column: 1;
+    grid-row: 2;
+    gap: 2rem;
+  }
+
+  .frontimage {
+    grid-column: 1;
+    grid-row: 3;
+    padding: 1rem 0;
+  }
+}
+
+/* Animation på h1
+.pop-title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  animation: popUp 0.8s ease-out forwards;
+}
+
+.pop-title span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.pop-title span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes popUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+} */
 /* Desktop */
 @media (max-width: 1024px) {
   .content {
@@ -120,25 +297,25 @@ h1 {
   }
 }
 
-/* Mobil */
-@media (max-width: 400px) {
-  .header {
-    padding: 1.5rem;
-  }
+.imagesection {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobil: én kolonne */
+  gap: 1rem; /* afstand mellem billeder */
+  padding: 1rem;
+}
 
-  .content {
-    padding: 2rem 1.5rem;
+/* Tablet & Desktop: 2 kolonner, 2 rækker */
+@media (min-width: 768px) {
+  .imagesection {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
+    gap: 1.5rem;
+    padding: 2rem;
   }
+}
 
-  .text .chapter {
-    font-size: 3rem;
-  }
-
-  .images {
-    grid-template-columns: 1fr;
-  }
-
-  .img {
-    aspect-ratio: 16 / 9;
-  }
+.imagesection img {
+  width: 100%; /* fylder sin grid-celle */
+  height: auto;
+  object-fit: cover; /* proportionelt og fylder cellen */
+  display: block;
 }

@@ -293,20 +293,28 @@ a {
   padding: 1rem;
 }
 
-/* Tablet & Desktop: 2 kolonner, 2 rækker */
+/* Mobile-first: billeder under hinanden */
+.imagesection {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 kolonne på mobil */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.imagesection img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Tablet & Desktop: 2 kolonner */
 @media (min-width: 768px) {
   .imagesection {
     grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
     gap: 1.5rem;
     padding: 2rem;
   }
-}
-
-.imagesection img {
-  width: 100%; /* fylder sin grid-celle */
-  height: auto;
-  object-fit: cover; /* proportionelt og fylder cellen */
-  display: block;
 }
 
 /* ----------Animation------ */

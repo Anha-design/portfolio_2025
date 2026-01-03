@@ -32,6 +32,7 @@ p {
   font-size: 15px;
   color: #000000;
   margin-top: 20px;
+  line-height: 22px;
 }
 
 h1 {
@@ -82,7 +83,7 @@ h2 {
 .n2 a:hover,
 .n3 a:hover,
 .n4 a:hover,
-.n5 a:hover {
+.n5 a:hover .a a:hover {
   color: #9d6d52;
 }
 a {
@@ -177,13 +178,55 @@ a {
 .burger-menu a:hover {
   color: #9d6d52;
 }
+
+.imagesection img {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.visuelle_elementer {
+  padding-top: 3rem;
+}
+
+.visuelle_elementer_teenagersvg {
+  padding-top: 3rem;
+}
+
+.teenagersvg {
+  max-height: 600px;
+}
+
+.daase {
+  max-height: 100px;
+  rotate: -15deg;
+}
+
+.svg-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.svg-wrapper img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+
+.samletsvger {
+  padding-top: 2rem;
+
+  height: 80px;
+}
+
 /*--------------- dot homeknap---------- */
 
 .dot {
   display: flex; /* gør containeren til flex */
   justify-content: flex-end; /* skubber indholdet til højre */
   padding: 1rem; /* evt. luft rundt om */
-  margin-right: 15px;
+
   width: 100%; /* fylder hele bredden */
 }
 
@@ -195,6 +238,18 @@ a {
 
 /*--------------- grids --------------*/
 
+.section_all_things_moive {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 1rem 1rem;
+  align-items: top;
+  padding: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  padding-left: 1rem;
+}
+
 .section1 {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -204,7 +259,7 @@ a {
   padding: 4rem;
   padding-top: 1rem;
   padding-bottom: 0;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
 }
 
 .imagesection img {
@@ -256,6 +311,10 @@ a {
     padding: 2rem;
   }
 
+  /* .section_all_things_moive {
+    grid-column: 1;
+    grid-row: 1;
+  } */
   .h1container {
     grid-column: 1;
     grid-row: 1;
@@ -291,6 +350,7 @@ a {
   grid-template-columns: 1fr; /* Mobil: én kolonne */
   gap: 1rem; /* afstand mellem billeder */
   padding: 1rem;
+  padding-right: 0;
 }
 
 /* Mobile-first: billeder under hinanden */
@@ -314,6 +374,23 @@ a {
     grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
     gap: 1.5rem;
     padding: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .section1 {
+    grid-template-columns: 1fr; /* ÉN kolonne på mobil */
+    grid-template-rows: auto auto;
+  }
+
+  .h1container {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .imagesection {
+    grid-column: 1;
+    grid-row: 2; /* BILLEDER KOMMER UNDER TEKST */
   }
 }
 

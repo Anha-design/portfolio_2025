@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>2 All things movie</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/svg+xml" href="svg/dot_favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="style-test.css" />
+  </head>
+
+  <body>
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="svg/little_sir_logo_small.svg" alt="Little Sir Logo" />
+        </a>
+      </div>
+
+      <nav id="nav">
+        <ul class="menu">
+          <li><a href="1.html">1</a></li>
+          <li><a href="2.html">2</a></li>
+          <li><a href="3.html">3</a></li>
+          <li><a href="4.html">4</a></li>
+          <li><a href="5.html">5</a></li>
+          <li><a href="om_mig.html">Om mig</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger-btn" aria-label="Åbn menu" aria-expanded="false">
+        <img src="svg/burgermenu.svg" alt="" />
+      </button>
+
+      <nav class="burger-menu" id="burgerMenu">
+        <ul>
+          <li><a href="om_mig.html">Om mig</a></li>
+          <li><a href="1.html">1. Studiestartsprøve</a></li>
+          <li><a href="2.html">2. All things moive</a></li>
+          <li><a href="3.html">3. Teenager på nødration</a></li>
+          <li><a href="4.html">4. CHIBA redesign</a></li>
+          <li><a href="5.html">5. Et juleeventyr</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== SECTION 1 ===== -->
+    <section class="section1">
+      <div class="h1container">
+        <h1>2 All things movie</h1>
+        <!-- <h1 class="pop-title"><span>1. Studiestartsprøve</span><br /></h1> -->
+
+        <p>
+          Senere på 1. semester udviklede jeg et website, hvor jeg arbejdede med
+          hele design og udviklingsprocessen fra idéudvikling og
+          konceptualisering til visuelt design, logo og kodning af det færdige
+          site. Projektet gav mig praktisk erfaring med at omsætte et koncept
+          til en digital løsning med fokus på både æstetik og funktionalitet.
+          Opgaven havde særligt fokus på konceptvalidering, analyse af
+          brugergrænseflader og implementering af brugerfeedback, hvilket
+          styrkede mine kompetencer inden for brugerinvolvering og iterativ
+          designproces.
+        </p>
+        <p>
+          Designarbejdet blev udført i Figma, hvor jeg udviklede både lo-fi og
+          hi-fi wireframes som grundlag for den efterfølgende kodning.
+          Hjemmesiden blev delvist responsiv, og arbejdet med CSS Grid og media
+          queries tydeliggjorde både mine tekniske udfordringer og min
+          læringsproces. Gennem test i flere faser opnåede jeg en bedre
+          forståelse for samspillet mellem visuelt udtryk, navigation og
+          brugeroplevelse, hvilket har bidraget til min faglige udvikling inden
+          for digitalt design og frontend-udvikling.
+        </p>
+
+        <p class="website-link">
+          <a
+            href="https://anha-design.github.io/emnesite_allthings/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            se hjemmesiden her
+          </a>
+        </p>
+        <div class="visuelle_elementer">
+          <h2>Visuelle elementer</h2>
+          <img
+            class="samletsvger"
+            src="svg/rewind_logo_farvekat.svg"
+            alt="rewind logo og Farvekant"
+          />
+        </div>
+      </div>
+      <div class="imagesection">
+        <img
+          src="image/allthingsmovie2.webp"
+          alt="screenshot af all things movie"
+        />
+        <img src="image/moodboard_allthingsmovie.webp" alt="moodboard" />
+        <img
+          src="image/allthingsmovie1.webp"
+          alt="screenshot af all things movie"
+        />
+        <img src="image/Allthings_vote_figma_page.webp" alt="figma side" />
+      </div>
+    </section>
+    <!-- ===== home knap ===== -->
+    <section class="dot">
+      <div>
+        <a href="index.html">
+          <img class="dot-icon" src="svg/dot_favicon.svg" alt="homeknap" />
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="footersize">
+        <img src="svg/streg_footer.svg" alt="streg" />
+      </div>
+      <div class="namesvg">
+        <img src="svg/annebeth_faurby_2025.svg" alt="Annebeth Faurby 2025" />
+      </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+    <script src="burgermenu.js"></script>
+  </body>
+</html>

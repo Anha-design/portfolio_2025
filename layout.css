@@ -184,7 +184,10 @@ a {
   border-radius: 10px;
 }
 
-.visuelle_elementer {
+.visuelle_elementer_404 {
+  max-width: auto;
+}
+uto .visuelle_elementer {
   padding-top: 3rem;
 }
 

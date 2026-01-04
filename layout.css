@@ -11,6 +11,22 @@ img {
   display: block;
 }
 
+.profileimage {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.profileimage_om_mig {
+  display: block;
+  max-width: 500px;
+  height: auto;
+  border: 10px solid #9d6d52; /* kanten */
+  border-radius: 25px 25px 25px 25px;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f4efeb;
 }
@@ -50,6 +66,39 @@ h2 {
   font-family: "Barriecito", system-ui;
   font-size: 40px;
   color: #04389e;
+}
+
+/* cv */
+
+.cv li {
+  font-family: "Roboto+Flex", system-ui;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+  line-height: 22px;
+  margin-top: 50px; /* fjerner margin på li */
+  padding: 0; /* hvis der er padding */
+}
+
+.cv li p {
+  font-family: "Roboto+Flex", system-ui;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+  line-height: 22px;
+  margin: 0.2em 0; /* lille margin mellem p's, juster efter behov */
+}
+
+.strong {
+  display: block;
+  margin-top: 20px; /* afstand over */
+  margin-bottom: 10px; /* afstand under */
+}
+
+.cv ul {
+  list-style: none; /* fjerner dot */
+  padding: 0; /* fjerner standard indrykning */
+  margin: 0; /* juster hvis nødvendigt */
 }
 
 .n1 a {
@@ -310,6 +359,18 @@ a {
   padding-top: 1rem;
   padding-bottom: 0;
   padding-left: 1rem;
+}
+
+.cv {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  grid-template-rows: auto auto;
+  gap: 1rem 1rem;
+  align-items: top;
+  padding: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  /* padding-left: 1rem; */
 }
 
 .section1 {

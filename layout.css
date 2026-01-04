@@ -184,10 +184,12 @@ a {
   border-radius: 10px;
 }
 
-.visuelle_elementer_404 {
-  max-width: auto;
+.grid_item img {
+  border: 1px solid black;
+  border-radius: 10px;
 }
-uto .visuelle_elementer {
+
+.visuelle_elementer {
   padding-top: 3rem;
 }
 
@@ -204,6 +206,10 @@ uto .visuelle_elementer {
   rotate: -15deg;
 }
 
+.visuelle_elementer_404 {
+  padding-top: 50px;
+}
+
 .svg-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -216,11 +222,64 @@ uto .visuelle_elementer {
   height: auto;
   max-width: 200px;
 }
+.area_size {
+  width: 100%;
+  height: auto;
+  max-width: 274px;
+}
+.svg-wrapper_dumpling {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  padding-top: 40px;
+}
 
 .samletsvger {
   padding-top: 2rem;
 
   height: 80px;
+}
+/* \et juleeventyr grid\ */
+.content_container p {
+  font-family: "Roboto+Flex", system-ui;
+  font-size: 10px;
+  color: #000000;
+  margin-top: 5px;
+  line-height: 22px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.content_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
+  gap: 20px; /* afstand mellem elementerne */
+}
+
+.grid_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.grid_item iframe,
+.grid_item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* optional, lidt styling */
+}
+
+.grid_item p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #333;
 }
 
 /*--------------- dot homeknap---------- */
@@ -452,5 +511,12 @@ uto .visuelle_elementer {
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+/* Et juleeventyr media */
+@media (max-width: 768px) {
+  .grid_container {
+    grid-template-columns: 1fr;
   }
 }

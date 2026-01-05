@@ -22,10 +22,10 @@ img {
   display: block;
   max-width: 500px;
   height: auto;
-  border: 10px solid #9d6d52; /* kanten */
-  border-radius: 25px 25px 25px 25px;
+  border: 10px solid #9d6d52;
+  border-radius: 25px;
   box-sizing: border-box;
-  margin-left: 100px;
+  margin: 0 auto; /* Tilføj denne linje for centering */
 }
 
 body {

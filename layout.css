@@ -25,6 +25,7 @@ img {
   border: 10px solid #9d6d52; /* kanten */
   border-radius: 25px 25px 25px 25px;
   box-sizing: border-box;
+  margin-left: 100px;
 }
 
 body {
@@ -172,7 +173,8 @@ h2 {
 .n2 a:hover,
 .n3 a:hover,
 .n4 a:hover,
-.n5 a:hover .a a:hover {
+.n5 a:hover,
+.a a:hover {
   color: #9d6d52;
 }
 a {
@@ -223,12 +225,12 @@ a {
 .website-link a {
   font-family: "Barriecito", system-ui;
   font-size: 20px;
-  color: #04389e;
+  color: #9d6d52;
   text-decoration: none; /* fjern understregning */
 }
 
 .website-link a:hover {
-  color: #9d6d52;
+  color: #04389e;
 }
 
 /* -------------- Burgermenu ----------- */
@@ -371,6 +373,49 @@ a {
   color: #333;
 }
 
+/* --------------- accodiance ----------- */
+.faq-section {
+  display: grid;
+  grid-template-columns: min(100%, 65ch);
+  place-content: center;
+  gap: 1rem;
+}
+
+/* Style for FAQ “bokse” */
+details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Style for klikbare overskrift */
+summary {
+  /* background: #eee; */
+  cursor: pointer;
+  padding: 1rem;
+  font-weight: 600;
+  list-style: none; /* fjern pil hvis browser tilføjer */
+}
+
+/* Indholdet der skal foldes ud */
+.content {
+  max-height: 0; /* skjul som standard */
+  overflow: hidden;
+  padding: 0 1rem; /* lodret padding håndteres med max-height */
+  /* background: #fafafa; */
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+/* Når details er åbent, fold indholdet ud */
+details[open] .content {
+  max-height: 500px; /* skal være større end indholdets højde */
+  padding: 1rem; /* tilføj lodret padding */
+}
+
+.content p {
+  margin: 0;
+}
+
 /*--------------- dot homeknap---------- */
 
 .dot {
@@ -443,6 +488,27 @@ a {
   padding-top: 1rem;
   padding-bottom: 0;
   /* padding-left: 1rem; */
+}
+
+.faq-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem 1rem;
+  align-items: top;
+  padding: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 0;
+  max-width: 700px;
+}
+
+.faq-section p,
+summary {
+  font-family: "Roboto+Flex", system-ui;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 15px;
+  line-height: 22px;
 }
 
 .imagesection img {

@@ -22,10 +22,10 @@ img {
   display: block;
   max-width: 500px;
   height: auto;
-  border: 10px solid #9d6d52; /* kanten */
-  border-radius: 25px 25px 25px 25px;
+  border: 10px solid #9d6d52;
+  border-radius: 25px;
   box-sizing: border-box;
-  margin-left: 100px;
+  margin: 0 auto; /* Tilføj denne linje for centering */
 }
 
 body {
@@ -264,6 +264,7 @@ a {
   text-decoration: none;
   font-family: "Barriecito", system-ui;
   color: #04389e;
+  font-size: 25px;
 }
 
 .burger-menu a:hover {
@@ -376,6 +377,26 @@ a {
 /* --------------- accodiance ----------- */
 .faq-section {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem 1rem;
+  align-items: top;
+  padding: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 0;
+  max-width: 700px;
+}
+
+.faq-section p,
+summary {
+  font-family: "Roboto+Flex", system-ui;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 15px;
+  line-height: 22px;
+}
+.faq-section {
+  display: grid;
   grid-template-columns: min(100%, 65ch);
   place-content: center;
   gap: 1rem;
@@ -422,10 +443,8 @@ details[open] .content {
   display: flex; /* gør containeren til flex */
   justify-content: flex-end; /* skubber indholdet til højre */
   padding: 1rem; /* evt. luft rundt om */
-
   width: 100%; /* fylder hele bredden */
 }
-
 .dot img {
   max-width: 30px;
   max-height: 40px;
@@ -480,8 +499,7 @@ details[open] .content {
 
 .section1 {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem 1rem;
   align-items: top;
   padding: 4rem;
@@ -490,25 +508,11 @@ details[open] .content {
   /* padding-left: 1rem; */
 }
 
-.faq-section {
+.section_test {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: auto; */
   gap: 1rem 1rem;
-  align-items: top;
-  padding: 4rem;
-  padding-top: 6rem;
-  padding-bottom: 0;
-  max-width: 700px;
-}
-
-.faq-section p,
-summary {
-  font-family: "Roboto+Flex", system-ui;
-  font-size: 15px;
-  color: #000000;
-  margin-top: 15px;
-  line-height: 22px;
 }
 
 .imagesection img {

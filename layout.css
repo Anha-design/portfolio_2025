@@ -11,6 +11,23 @@ img {
   display: block;
 }
 
+.profileimage {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.profileimage_om_mig {
+  display: block;
+  max-width: 500px;
+  height: auto;
+  border: 10px solid #9d6d52; /* kanten */
+  border-radius: 25px 25px 25px 25px;
+  box-sizing: border-box;
+  margin-left: 100px;
+}
+
 body {
   background-color: #f4efeb;
 }
@@ -52,6 +69,79 @@ h2 {
   color: #04389e;
 }
 
+/* cv */
+
+.cv li {
+  font-family: "Roboto+Flex", system-ui;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+  line-height: 22px;
+  margin-top: 50px; /* fjerner margin på li */
+  padding: 0; /* hvis der er padding */
+}
+
+.cv li p {
+  font-family: "Roboto+Flex", system-ui;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+  line-height: 22px;
+  margin: 0.2em 0; /* lille margin mellem p's, juster efter behov */
+}
+
+.strong {
+  display: block;
+  margin-top: 20px; /* afstand over */
+  margin-bottom: 10px; /* afstand under */
+}
+
+.cv ul {
+  list-style: none; /* fjerner dot */
+}
+
+.first strong {
+  display: block;
+  margin-top: 5px; /* afstand over */
+  margin-bottom: 10px; /* afstand under */
+}
+
+/* Uddannelse */
+.uddannelse li {
+  font-family: "Roboto+Flex", system-ui;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+  line-height: 22px;
+  margin-top: 50px; /* fjerner margin på li */
+  padding: 0; /* hvis der er padding */
+}
+
+.uddannelse li p {
+  font-family: "Roboto+Flex", system-ui;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+  line-height: 22px;
+  margin: 0.2em 0; /* lille margin mellem p's, juster efter behov */
+}
+.uddannelse ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.strong {
+  display: block;
+  margin-top: 20px; /* afstand over */
+  margin-bottom: 10px; /* afstand under */
+}
+
+.cv-wrapper2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .n1 a {
   font-family: "Barriecito", system-ui;
   font-size: 20px;
@@ -83,7 +173,8 @@ h2 {
 .n2 a:hover,
 .n3 a:hover,
 .n4 a:hover,
-.n5 a:hover .a a:hover {
+.n5 a:hover,
+.a a:hover {
   color: #9d6d52;
 }
 a {
@@ -134,12 +225,12 @@ a {
 .website-link a {
   font-family: "Barriecito", system-ui;
   font-size: 20px;
-  color: #04389e;
+  color: #9d6d52;
   text-decoration: none; /* fjern understregning */
 }
 
 .website-link a:hover {
-  color: #9d6d52;
+  color: #04389e;
 }
 
 /* -------------- Burgermenu ----------- */
@@ -184,10 +275,12 @@ a {
   border-radius: 10px;
 }
 
-.visuelle_elementer_404 {
-  max-width: auto;
+.grid_item img {
+  border: 1px solid black;
+  border-radius: 10px;
 }
-uto .visuelle_elementer {
+
+.visuelle_elementer {
   padding-top: 3rem;
 }
 
@@ -204,6 +297,10 @@ uto .visuelle_elementer {
   rotate: -15deg;
 }
 
+.visuelle_elementer_404 {
+  padding-top: 50px;
+}
+
 .svg-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -216,11 +313,107 @@ uto .visuelle_elementer {
   height: auto;
   max-width: 200px;
 }
+.area_size {
+  width: 100%;
+  height: auto;
+  max-width: 274px;
+}
+.svg-wrapper_dumpling {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  padding-top: 40px;
+}
 
 .samletsvger {
   padding-top: 2rem;
 
   height: 80px;
+}
+/* \et juleeventyr grid\ */
+.content_container p {
+  font-family: "Roboto+Flex", system-ui;
+  font-size: 10px;
+  color: #000000;
+  margin-top: 5px;
+  line-height: 22px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.content_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
+  gap: 20px; /* afstand mellem elementerne */
+}
+
+.grid_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.grid_item iframe,
+.grid_item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* optional, lidt styling */
+}
+
+.grid_item p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* --------------- accodiance ----------- */
+.faq-section {
+  display: grid;
+  grid-template-columns: min(100%, 65ch);
+  place-content: center;
+  gap: 1rem;
+}
+
+/* Style for FAQ “bokse” */
+details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Style for klikbare overskrift */
+summary {
+  /* background: #eee; */
+  cursor: pointer;
+  padding: 1rem;
+  font-weight: 600;
+  list-style: none; /* fjern pil hvis browser tilføjer */
+}
+
+/* Indholdet der skal foldes ud */
+.content {
+  max-height: 0; /* skjul som standard */
+  overflow: hidden;
+  padding: 0 1rem; /* lodret padding håndteres med max-height */
+  /* background: #fafafa; */
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+/* Når details er åbent, fold indholdet ud */
+details[open] .content {
+  max-height: 500px; /* skal være større end indholdets højde */
+  padding: 1rem; /* tilføj lodret padding */
+}
+
+.content p {
+  margin: 0;
 }
 
 /*--------------- dot homeknap---------- */
@@ -253,6 +446,38 @@ uto .visuelle_elementer {
   padding-left: 1rem;
 }
 
+.uddannelse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem 1rem;
+  align-items: top;
+  padding: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  /* padding-left: 1rem; */
+}
+
+.cv {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* CV bredere */
+  gap: rem;
+  padding: 4rem;
+}
+.cv h2 {
+  grid-column: 1 / -1;
+}
+
+.uddannelse {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* CV bredere */
+  gap: rem;
+  padding: 4rem;
+}
+.uddannelse h2 {
+  grid-column: 1 / -1;
+}
+
 .section1 {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -263,6 +488,27 @@ uto .visuelle_elementer {
   padding-top: 1rem;
   padding-bottom: 0;
   /* padding-left: 1rem; */
+}
+
+.faq-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem 1rem;
+  align-items: top;
+  padding: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 0;
+  max-width: 700px;
+}
+
+.faq-section p,
+summary {
+  font-family: "Roboto+Flex", system-ui;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 15px;
+  line-height: 22px;
 }
 
 .imagesection img {
@@ -452,5 +698,12 @@ uto .visuelle_elementer {
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+/* Et juleeventyr media */
+@media (max-width: 768px) {
+  .grid_container {
+    grid-template-columns: 1fr;
   }
 }

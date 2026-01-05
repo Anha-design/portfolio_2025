@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>5 Et juleeventyr</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/svg+xml" href="svg/dot_favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="style-test.css" />
+  </head>
+
+  <body>
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="svg/little_sir_logo_small.svg" alt="Little Sir Logo" />
+        </a>
+      </div>
+
+      <nav id="nav">
+        <ul class="menu">
+          <li><a href="1.html">1</a></li>
+          <li><a href="2.html">2</a></li>
+          <li><a href="3.html">3</a></li>
+          <li><a href="4.html">4</a></li>
+          <li><a href="5.html">5</a></li>
+          <li><a href="om_mig.html">Om mig</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger-btn" aria-label="Åbn menu" aria-expanded="false">
+        <img src="svg/burgermenu.svg" alt="" />
+      </button>
+
+      <nav class="burger-menu" id="burgerMenu">
+        <ul>
+          <li><a href="om_mig.html">Om mig</a></li>
+          <li><a href="1.html">1. Studiestartsprøve</a></li>
+          <li><a href="2.html">2. All things moive</a></li>
+          <li><a href="3.html">3. Teenager på nødration</a></li>
+          <li><a href="4.html">4. CHIBA redesign</a></li>
+          <li><a href="5.html">5. Et juleeventyr</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== SECTION 1 ===== -->
+    <section class="section1">
+      <div class="h1container">
+        <h1>5 Et juleeventyr</h1>
+
+        <p>
+          Projektet <em>Et vintereventyr</em> er udviklet med fokus på filmisk
+          storytelling og anvendelse af dramaturgiske modeller. Fortællingen er
+          struktureret efter en 5-linjet story og berettermodellen, hvilket
+          sikrer en tydelig narrativ opbygning med anslag, præsentation,
+          konflikt, klimaks og afrunding.
+        </p>
+
+        <p>
+          I analysen af filmen fremgår det, at klipningen er præget af
+          kontinuitet og et roligt tempo, som understøtter filmens
+          stemningsopbygning. Der er arbejdet systematisk med A- og B-rolls,
+          hvor A-roll udgør den bærende fortælling, mens B-roll bidrager til
+          visuel variation, stemning og sammenhæng i klipningen.
+        </p>
+
+        <p>
+          Projektet anvender princippet “shoot for the edit” som et centralt
+          planlægningsværktøj. Ved at forudse behovene i post-produktionen blev
+          optagelserne målrettet, hvilket effektiviserede redigeringsprocessen
+          og minimerede overflødigt materiale.
+        </p>
+
+        <p>
+          Art direction er bevidst holdt i en kold farvepalette, som
+          understøtter vintertemaet og bidrager til et ensartet visuelt udtryk.
+          Samlet set demonstrerer projektet en metodisk tilgang til
+          filmproduktion, hvor dramaturgi, klipning og visuel stil arbejder
+          sammen om at formidle en sammenhængende fortælling.
+        </p>
+      </div>
+
+      <!-- end h1container -->
+
+      <!-- ===== Video sektion ===== -->
+      <div class="content_container">
+        <div class="grid_container">
+          <!-- Video 1 -->
+          <div class="grid_item">
+            <iframe
+              width="360"
+              height="215"
+              src="https://www.youtube.com/embed/N4vKjW0l1eo"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <p>Art direction</p>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="grid_item">
+            <iframe
+              width="360"
+              height="215"
+              src="https://www.youtube.com/embed/cQF88wCjaEs"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <p>Et juleeventyr</p>
+          </div>
+
+          <!-- Billede 1 -->
+          <div class="grid_item">
+            <img
+              src="image/VO_beraettemodel.webp"
+              alt="Voice over med berættemodel"
+            />
+            <p>Voice over med berettermodel</p>
+          </div>
+
+          <!-- Billede 2 -->
+          <div class="grid_item">
+            <img src="image/story_board.webp" alt="Story board" />
+            <p>Story board</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section1 -->
+
+    <!-- ===== home knap ===== -->
+    <section class="dot">
+      <div>
+        <a href="index.html">
+          <img class="dot-icon" src="svg/dot_favicon.svg" alt="homeknap" />
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="footersize">
+        <img src="svg/streg_footer.svg" alt="streg" />
+      </div>
+      <div class="namesvg">
+        <img src="svg/annebeth_faurby_2025.svg" alt="Annebeth Faurby 2025" />
+      </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+    <script src="burgermenu.js"></script>
+    <script src="tekstombrydning.js"></script>
+  </body>
+</html>

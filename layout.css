@@ -563,7 +563,7 @@ details[open] .content {
 }
 
 /* Mobil */
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .h1_section {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;

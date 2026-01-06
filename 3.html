@@ -19,6 +19,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="style-test.css" />
+    <link rel="stylesheet" href="3.css" />
   </head>
 
   <body>
@@ -26,7 +27,7 @@
     <header class="header">
       <div class="logo">
         <a href="index.html">
-          <img src="svg/little_sir_logo_small.svg" alt="Little Sir Logo" />
+          <img src="svg/little_sir.svg" alt="Little Sir Logo" />
         </a>
       </div>
 
@@ -56,13 +57,10 @@
         </ul>
       </nav>
     </header>
-
-    <!-- ===== SECTION 1 ===== -->
-    <section class="section1">
-      <div class="h1container">
+    <!-- -------------------------------------- -->
+    <section class="text-image-section">
+      <div class="text-side">
         <h1>3 Teenager på nødration</h1>
-        <!-- <h1 class="pop-title"><span>1. Studiestartsprøve</span><br /></h1> -->
-
         <p>
           I efteråret arbejde vi med ”emergency site”, hvor SVG blev
           introduceret som et animationselement ved brug af CSS og JavaScript.
@@ -106,43 +104,34 @@
             se processen her
           </a>
         </p>
-
-        <div class="visuelle_elementer_teenagersvg">
-          <h2>Visuelle elementer</h2>
-          <div class="svg-wrapper">
-            <img
-              class="teenagersvg"
-              src="svg/teenager_svg-02.svg"
-              alt="teenager illustration"
-            />
-            <img class="daase" src="svg/daase_favicon_.svg" alt="daase logo" />
-          </div>
-        </div>
       </div>
-      <div class="imagesection">
-        <img
-          src="image/madlavning.webp"
-          alt="sur teenager spier bønner ud af en dåse"
-        />
+
+      <div class="image-side">
+        <img src="image/madlavning.webp" alt="Billede 1" class="img-large" />
         <img
           src="image/teenagerpaanoedration_frontpage.webp"
-          alt="screenshot af teenager på nødration"
+          alt="Billede 2"
+          class="img-small"
         />
-
-        <img src="image/teenagerpaanoedration_forms.webp" alt="forms" />
-        <img src="image/dark_mode.webp" alt="eksempel på dark mode" />
-
-        <!-- <img src="image/teenager_poster.webp" alt="poster af en teenager" /> -->
+        <img
+          src="image/teenagerpaanoedration_forms.webp"
+          alt="Billede 3"
+          class="img-medium"
+        />
+        <img src="image/dark_mode.webp" alt="Billede 4" class="img-small" />
       </div>
+      <section class="svg_section">
+        <h2>Visuelle elementer</h2>
+        <div class="svg-wrapper">
+          <img
+            class="teenagersvgs"
+            src="svg/teenager_svg-02.svg"
+            alt="teenager illustration"
+          />
+          <img class="daase" src="svg/daase_favicon_.svg" alt="daase logo" />
+        </div>
+      </section>
     </section>
-    <!-- ===== home knap ===== -->
-    <!-- <section class="dot">
-      <div>
-        <a href="index.html">
-          <img class="dot-icon" src="svg/home.svg" alt="homeknap" />
-        </a>
-      </div>
-    </section> -->
 
     <!-- ===== FOOTER ===== -->
     <footer>

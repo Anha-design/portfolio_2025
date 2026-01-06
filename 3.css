@@ -1,0 +1,69 @@
+/* ---------- Grid Container ---------- */
+
+.text-image-section {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr; /* 2 kolonner: tekst | billeder */
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem;
+}
+
+.img-small {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.img-medium {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.img-large {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.img-large {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* Tekst-side */
+.text-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Billede-side: 2x2 grid */
+.image-side {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
+  grid-template-rows: repeat(2, 1fr); /* 2 rækker */
+  gap: 1rem; /* afstand mellem billeder */
+}
+
+.image-side img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+/* ---------- SVG Sektion ---------- */
+
+/* ---------- Responsiv mobil ---------- */
+@media (max-width: 768px) {
+  .svg-wrapper {
+    grid-template-columns: 1fr; /* under hinanden på små skærme */
+  }
+}
+
+/* ---------- Responsiv mobil ---------- */
+@media (max-width: 768px) {
+  .text-image-section {
+    grid-template-columns: 1fr; /* 1 kolonne */
+  }
+
+  .image-side {
+    grid-template-columns: 1fr; /* billeder under hinanden */
+    grid-template-rows: auto;
+  }
+}

@@ -177,8 +177,14 @@ h2 {
 .a a:hover {
   color: #9d6d52;
 }
+
 a {
   text-decoration: none;
+}
+
+::selection {
+  background: #d0b34c;
+  color: #000000;
 }
 
 .barriecito-regular {
@@ -668,9 +674,8 @@ details[open] .content {
 }
 /* ... fortsæt for alle span’er ... */
 .pop-title span:nth-child(17) {
-  animation-delay: 0.1s;
+  animation-delay: 0.3s;
 }
-/* Tilføj flere som nødvendigt */
 
 /* -------------Animation på dot------- */
 

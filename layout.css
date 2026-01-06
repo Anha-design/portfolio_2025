@@ -181,6 +181,11 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  background: #d0b34c;
+  color: #000000;
+}
+
 .barriecito-regular {
   font-family: "Barriecito", system-ui;
   font-weight: 400;
@@ -668,9 +673,8 @@ details[open] .content {
 }
 /* ... fortsæt for alle span’er ... */
 .pop-title span:nth-child(17) {
-  animation-delay: 0.1s;
+  animation-delay: 0.3s;
 }
-/* Tilføj flere som nødvendigt */
 
 /* -------------Animation på dot------- */
 

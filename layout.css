@@ -565,30 +565,25 @@ details[open] .content {
 /* Mobil */
 @media (max-width: 600px) {
   .h1_section {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     padding: 2rem;
   }
 
-  /* .section_all_things_moive {
-    grid-column: 1;
-    grid-row: 1;
-  } */
-  .h1container {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .container {
-    grid-column: 1;
-    grid-row: 2;
-    gap: 2rem;
+  .h1container,
+  .herocontainer {
+    width: 100%;
+    text-align: center;
   }
 
   .frontimage {
-    grid-column: 1;
-    grid-row: 3;
-    padding: 1rem 0;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
   }
 }
 

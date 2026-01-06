@@ -169,6 +169,12 @@ h2 {
   color: #04389e;
 }
 
+.logo {
+  font-family: "Barriecito", system-ui;
+  font-size: 20px;
+  color: #04389e;
+}
+
 .n1 a:hover,
 .n2 a:hover,
 .n3 a:hover,
@@ -177,6 +183,7 @@ h2 {
 .a a:hover {
   color: #9d6d52;
 }
+
 a {
   text-decoration: none;
 }
